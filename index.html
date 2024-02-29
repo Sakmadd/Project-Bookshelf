@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MadBooks</title>
+</head>
+<body>
+    
+    <main>
+        <section class="input_section">
+            <h2>MadBooks <br><p>A Bookshelf By Ahmad Safii</p></h2>
+            <label for="inputBookTitle">Masukan Buku Baru</label>
+            <form id="inputBook">
+              <div class="input">
+                <input id="inputBookTitle" type="text" required placeholder="Judul">
+              </div>
+              <div class="input">
+                <input id="inputBookWriter" type="text" required placeholder="Penulis">
+              </div>
+              <div class="input">
+                <input id="inputBookRelease" type="number" required placeholder="Tahun">
+              </div>
+              <div class="input_inline">
+                <label for="inputBookIsComplete">Sudah Dibaca?</label>
+                <input id="inputBookIsComplete" value="true" type="checkbox">
+                <button id="bookSubmit" type="submit">Masukkan Buku</button>
+              </div>
+            </form>
+          </section>
+
+        <div class="search">
+            <input type="text" id="bookTitle" class="search-bar" placeholder="Cari Buku">
+            <button class="search-button" id="search-button">
+            </button>
+        </div>
+
+        <div class="colections">
+            <section class="book_shelf">
+                <h2>Rak Sudah Dibaca</h2>
+                
+                <div id="completeBookshelfList" class="book_list">
+                </div>
+                </section>
+            <section class="book_shelf">
+                <h2>Rak Belum Dibaca</h2>
+                
+                <div id="incompleteBookshelfList" class="book_list">
+                </div>
+                </section>
+              
+        </div>
+
+    </main>
+   <script src="js/script.js"></script>
+</body>
+</html>
